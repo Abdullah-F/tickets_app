@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_212432) do
+ActiveRecord::Schema.define(version: 2021_03_05_224114) do
+
+  create_table "tickets", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "assigned_user_id"
+    t.date "due_date"
+    t.integer "status_id"
+    t.integer "progress"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
@@ -21,4 +33,5 @@ ActiveRecord::Schema.define(version: 2021_03_05_212432) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end
