@@ -9,10 +9,10 @@ RUN apk update && apk add --no-cache nodejs \
 
 WORKDIR /usr/src/tickets_app
 
-#COPY Gemfile Gemfile
+COPY Gemfile Gemfile
 
-#COPY Gemfile.lock Gemfile.lock
+COPY Gemfile.lock Gemfile.lock
 
-#RUN bundle install
+RUN bundle install
 
 COPY . .
