@@ -1,4 +1,4 @@
-FROM ruby:2.6.3-alpine
+FROM ruby:2.6.6-alpine
 
 RUN apk update && apk add --no-cache nodejs \
     libxml2 libxml2-dev libxml2-utils \
