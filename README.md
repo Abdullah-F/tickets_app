@@ -38,3 +38,4 @@ In order to get the app running follow the steps listed below:
 * better improve the archetcure of notifications (using notice is a good idea but need version 6.0+ of rails)
 * adding more tests.
 * using a service layer.
+* I do not get what is the use of the `reminder_interval` in the table as a feature. so I ignored it since no enough time to ask a question and wait for the answer back and forth through email. 
