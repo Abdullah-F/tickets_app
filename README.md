@@ -1,4 +1,4 @@
-#Tickets App
+# Tickets App
 
 ## Installation
 In order to get the app running follow the steps listed below:
