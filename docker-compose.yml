@@ -13,3 +13,14 @@ services:
       - .env
     tty: true
     stdin_open: true
+  cron_jobs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/tickets_app
+    env_file:
+      - .env
+    tty: true
+    stdin_open: true
+
