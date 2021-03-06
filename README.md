@@ -39,3 +39,4 @@ In order to get the app running follow the steps listed below:
 * adding more tests.
 * using a service layer.
 * I do not get what is the use of the `reminder_interval` in the table as a feature. so I ignored it since no enough time to ask a question and wait for the answer back and forth through email. 
+* in case the query inside the reminder rake task returns large amout of records we will need to switch it use rals `find_in_batches` query.
