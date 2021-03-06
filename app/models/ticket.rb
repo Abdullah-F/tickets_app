@@ -3,9 +3,8 @@ class Ticket < ApplicationRecord
   validates_presence_of :title, :description, :due_date
 
   scope :by_due_date, -> (due_date) { where(due_date: due_date) }
-  scope :by_due_time, -> (due_time) {
-    joins(:assigned_user)
-      .where("users.due_date_reminder_time = '#{due_time_db_format(due_time)}'")
+  scope :by_assigned_user_due_time, -> (due_time) {
+    where("users.due_date_reminder_time = '#{due_time_db_format(due_time)}'")
   }
 
   private
