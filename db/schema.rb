@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_03_05_224114) do
     t.string "email", null: false
     t.integer "send_due_date_reminder", limit: 1, default: 0, null: false
     t.integer "due_date_reminder_interval", null: false
-    t.datetime "due_date_reminder_time", null: false
+    t.time "due_date_reminder_time", null: false
     t.string "time_zone", default: "UTC", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
