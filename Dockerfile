@@ -5,7 +5,7 @@ RUN apk update && apk add --no-cache nodejs \
     libxslt libxslt-dev zlib-dev zlib \
     libffi-dev build-base \
     make gcc g++ tzdata git\
-    sqlite sqlite-dev bash
+    sqlite sqlite-dev bash dcron
 
 WORKDIR /usr/src/tickets_app
 
