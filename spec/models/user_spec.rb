@@ -13,4 +13,13 @@ RSpec.describe User, type: :model do
         .to eq(described_class.send_due_date_reminders.symbolize_keys)
     end
   end
+
+  describe 'validations' do
+    let(:user) { build(:user) }
+
+    it 'validates the email format' do
+      user.email = 'invalid_email'
+      expect(user).not_to be_valid
+    end
+  end
 end
