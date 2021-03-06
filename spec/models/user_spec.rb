@@ -14,11 +14,11 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe 'validations' do
+  describe "validations" do
     let(:user) { build(:user) }
 
-    it 'validates the email format' do
-      user.email = 'invalid_email'
+    it "validates the email format" do
+      user.email = "invalid_email"
       expect(user).not_to be_valid
     end
   end

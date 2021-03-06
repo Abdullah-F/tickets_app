@@ -9,7 +9,7 @@ gem "rails", "~> 5.2.4", ">= 5.2.4.5"
 gem "sqlite3"
 # Use Puma as the app server
 gem "puma", "~> 3.11"
-gem 'whenever', '~> 1.0'
+gem "whenever", "~> 1.0"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -37,7 +37,7 @@ group :development, :test do
   gem "rspec-rails", "~> 4.0.1"
   gem "factory_bot_rails", "~> 6.1"
   gem "standard"
-  gem 'shoulda-matchers', '~> 4.0'
+  gem "shoulda-matchers", "~> 4.0"
 end
 
 group :development do
