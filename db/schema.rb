@@ -13,12 +13,12 @@
 ActiveRecord::Schema.define(version: 2021_03_05_224114) do
 
   create_table "tickets", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.integer "assigned_user_id"
-    t.date "due_date"
+    t.string "title", null: false
+    t.text "description", null: false
+    t.integer "assigned_user_id", null: false
+    t.date "due_date", null: false
     t.integer "status_id"
-    t.integer "progress"
+    t.integer "progress", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
