@@ -10,7 +10,7 @@ module Notifications
       end
 
       def deliver
-        mailer.with(params).send(mailer_method)
+        mailer.with(params).send(mailer_method).deliver_now
       end
     end
   end

@@ -13,7 +13,7 @@ module Notifications
     end
 
     def deliver
-      @delivery_methods.each do |delivery_method|
+      delivery_methods.each do |delivery_method|
         delivery_method.deliver
       end
       nil
