@@ -8,6 +8,7 @@ class Ticket < ApplicationRecord
         .beginning_of_minute.to_s(:db)
     end
   end
+
   belongs_to :assigned_user, class_name: User.name
   validates_presence_of :title, :description, :due_date
 
