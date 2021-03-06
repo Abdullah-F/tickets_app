@@ -23,8 +23,8 @@ In order to get the app running follow the steps listed below:
 * run `docker container exec -it tickets_app_api_1 /bin/bash` in a new window.
 * run `bundle exec rspec` to run the tests.
 
-## who the app works
-
+## how the app works
+* this is a very minimal implementation for the app to make use of time.
 * the app only has one single endponit for creating tickets, I created a user in the seedrb to be assigned to tickets since no registeration
    or any other funtionalites are supported in this app for users.
 * the time zone in the user table shall be used for display purposes after seralization is added to the app and other endpoints.
