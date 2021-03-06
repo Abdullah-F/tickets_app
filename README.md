@@ -36,4 +36,5 @@ In order to get the app running follow the steps listed below:
 ## things to be improved.
 * using a separate container for processing the jobs along with sidekiq and redis.
 * better improve the archetcure of notifications (using notice is a good idea but need version 6.0+ of rails)
-
+* adding more tests.
+* using a service layer.
